@@ -1,0 +1,4 @@
+- unless telephone.nil?
+  = link_to "tel:#{telephone}", class: ['tel'] do
+    = telephone.phony_formatted(format: :international)
+
